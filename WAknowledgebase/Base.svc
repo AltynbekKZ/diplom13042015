@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WAknowledgebase.Base" CodeBehind="Base.svc.cs" %>

@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace WAknowledgebase.Models
 {
+    [DataContract]
     public class QuestionModel
     {
+        [DataMember]
         public int Id { get; set; }
+        [DataMember]
         public string Title { get; set; }
+        [DataMember]
         public int AuthorId { get; set; }
+        [DataMember]
         public int SectionId { get; set; }
+        [DataMember]
         public DateTime Created { get; set; }
 
 

@@ -2,39 +2,36 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <div class="jumbotron" style="padding: 0 !important;">
+        <iframe src="slider/index.html" scrolling="no" width="100%" height="400" frameborder="0"></iframe>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-            <h2>Getting started</h2>
+            <h2>Жүйемен танысу</h2>
             <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+                Бұл жерде сіз порталдың барлық қызметтерімен танысып, өзіңізге қажетті бөлімді қолдана білуді уйрене аласыз...
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                <a class="btn btn-default" href="About.aspx">Толығырақ &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Web Hosting</h2>
+            <h2>Портал қызметкерлеріне сұрақ қою</h2>
             <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                Жер салығы бойынша портал қызметкерлеріне өзіңізге қажетті бөлім бойынша сұрақтар қосуға немесе алдын ала қосылған сұрақтар ішінен жауап алуыңызға болады.
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Толығырақ &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>Құжаттар мен кодекстер жиынтығы</h2>
+            <p>
+               Жер салығы бойынша заң, кодекс, ережелердегі  жаңартулармен немесе өзгерістермен танысу
+            </p>
+            <p>
+                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Толығырақ &raquo;</a>
             </p>
         </div>
     </div>

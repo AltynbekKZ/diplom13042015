@@ -2,12 +2,12 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
+    <h3>ЕНУ</h3>
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
+        Еуразия Ұлттық Университеті<br />
+        Қазақстан Республикасы, Астана қаласы<br />
+        <abbr title="Phone">Телефон:</abbr>
+        77-77-77
     </address>
 
     <address>
