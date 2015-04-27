@@ -36,9 +36,7 @@
                 <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                     <script src="~/fcbkcomplete1.09/fcbkcomplete/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="~/fcbkcomplete1.09/fcbkcomplete/fcbkcomplete.min.js" type="text/javascript" charset="utf-8"></script>   
+                <asp:ScriptReference Name="WebFormsBundle" />   
                  <%--Сценарии сайта--%>
             </Scripts>
         </asp:ScriptManager>

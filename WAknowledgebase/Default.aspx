@@ -22,7 +22,7 @@
                 Жер салығы бойынша портал қызметкерлеріне өзіңізге қажетті бөлім бойынша сұрақтар қосуға немесе алдын ала қосылған сұрақтар ішінен жауап алуыңызға болады.
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Толығырақ &raquo;</a>
+                <a class="btn btn-default" href="Search.aspx">Толығырақ &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -31,7 +31,7 @@
                Жер салығы бойынша заң, кодекс, ережелердегі  жаңартулармен немесе өзгерістермен танысу
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Толығырақ &raquo;</a>
+                <a class="btn btn-default" href="Search.aspx">Толығырақ &raquo;</a>
             </p>
         </div>
     </div>

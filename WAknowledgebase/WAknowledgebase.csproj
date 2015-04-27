@@ -115,20 +115,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AddReplyForm.aspx" />
     <Content Include="Base.svc" />
     <Content Include="BaseWebService.asmx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="fcbkcomplete1.09\fcbkcomplete\close.gif" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\close.gif" />
     <Content Include="fcbkcomplete1.09\fcbkcomplete\fcbkcomplete.js" />
-    <Content Include="fcbkcomplete1.09\fcbkcomplete\fcbkcomplete.min.js" />
+    <Content Include="Scripts\fcbkcomplete.min.js" />
     <Content Include="fcbkcomplete1.09\fcbkcomplete\fetched.txt" />
     <Content Include="fcbkcomplete1.09\fcbkcomplete\index.html" />
     <Content Include="fcbkcomplete1.09\fcbkcomplete\jquery.js" />
-    <Content Include="fcbkcomplete1.09\fcbkcomplete\loading.gif" />
-    <Content Include="fcbkcomplete1.09\fcbkcomplete\style.css" />
+    <Content Include="Scripts\loading.gif" />
+    <Content Include="Scripts\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -141,6 +143,8 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery.fcbkcomplete.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -170,6 +174,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Search.aspx" />
+    <Content Include="SearchForm.aspx" />
     <Content Include="Service1.svc" />
     <Content Include="Site.Master" />
     <Content Include="slider\css\global.css" />
@@ -206,6 +211,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddReplyForm.aspx.cs">
+      <DependentUpon>AddReplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddReplyForm.aspx.designer.cs">
+      <DependentUpon>AddReplyForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -252,6 +264,13 @@
     </Compile>
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm.aspx.cs">
+      <DependentUpon>SearchForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchForm.aspx.designer.cs">
+      <DependentUpon>SearchForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
