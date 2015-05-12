@@ -16,7 +16,7 @@ namespace WAknowledgebase.Controllers
             {
                 if (_connectionString == null)
                 {
-                    _connectionString = @"Data Source=dellhome\sqlexpress;Initial Catalog=knowledgebase;Integrated Security=True";
+                    _connectionString = @"Data Source=SATUOV\SQLEXPRESS;Initial Catalog=knowledgebase;Integrated Security=True";
                 }
                 return _connectionString;
             }

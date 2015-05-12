@@ -34,6 +34,15 @@
                 <a class="btn btn-default" href="Search.aspx">Толығырақ &raquo;</a>
             </p>
         </div>
+        <div class="col-md-4">
+            <h2>Жүйедегі сұрақтарға жауап беру</h2>
+            <p>
+               Жүйеге келіп түскен сұрақтарға жауап беру немесе жауаптар тізімімен байланыстыру
+            </p>
+            <p>
+                <a class="btn btn-default" href="AddReplyForm.aspx">Өту &raquo;</a>
+            </p>
+        </div>
     </div>
 
 </asp:Content>

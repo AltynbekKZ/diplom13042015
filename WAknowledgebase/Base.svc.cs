@@ -28,7 +28,7 @@ namespace WAknowledgebase
         {
             ConnectionProvider provider = new ConnectionProvider();
 
-            return provider.GetQuestionsBySectionId(sectionid);
+            return provider.GetQuestionsBySectionId(sectionid, false);
         }
     }
 }

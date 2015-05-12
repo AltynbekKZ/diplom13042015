@@ -54,5 +54,21 @@ namespace WAknowledgebase.Models
         public string Author { get; set; }
         [DataMember]
         public string Created { get; set; }
+
+        public static List<AnswerModel> GetAnswersFromReader(IDataReader reader)
+        {
+            var questions = new List<AnswerModel>();
+            while (reader.Read())
+            {
+                questions.Add(new AnswerModel
+                {
+                    Id = reader["id"].ToString(),
+                    Author = reader["authorid"].ToString(),
+                    Created = ((DateTime)reader["created"]).ToShortDateString(),
+                    Title = reader["title"].ToString()
+                });
+            }
+            return questions;
+        }
     }
 }
