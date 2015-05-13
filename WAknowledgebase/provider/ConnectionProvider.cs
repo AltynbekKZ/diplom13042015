@@ -56,6 +56,22 @@ namespace WAknowledgebase.provider
                 ExecuteReader(cmd);
             }
         }
+
+        public void InsertQuestion(int sectionid, int authorid, string title)
+        {
+            using (SqlConnection cn = new SqlConnection(ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand("InsertQuestion", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@title", SqlDbType.VarChar).Value = title;
+                cmd.Parameters.Add("@autorid", SqlDbType.Int).Value = authorid;
+                cmd.Parameters.Add("@sectionid", SqlDbType.VarChar).Value = sectionid;
+                cn.Open();
+                ExecuteReader(cmd);
+            }
+        }
+
+
         public void ConnectQuestionWithReply(int questionid, int replyid)
         {
             using (SqlConnection cn = new SqlConnection(ConnectionString))
@@ -81,16 +97,8 @@ namespace WAknowledgebase.provider
                 IDataReader reader = ExecuteReader(cmd);
 
                 var questions = new List<AnswerModel>();
-                while (reader.Read())
-                {
-                    questions.Add(new AnswerModel
-                    {
-                        Id = reader["id"].ToString(),
-                        Created = ((DateTime)reader["created"]).ToString("dd.MM.yyy HH.mm"),
-                        Title = reader["title"].ToString(),
-                        Author = reader["authorid"].ToString()
-                    });
-                }
+                questions = AnswerModel.GetAnswersFromReader(reader);
+               
                 return questions;
             }
         }
